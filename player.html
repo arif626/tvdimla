@@ -104,7 +104,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const channelId = urlParams.get('channel');
     const streamUrl = `manifest.php?id=${channelId}`;
-    
+    const licenseUrl = `lic.php?id=${channelId}`;
 
     fetchLicenseData(licenseUrl)
       .then(licenseData => {
